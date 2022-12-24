@@ -11,6 +11,7 @@ body {
   justify-content: center;
   height: 100vh;
   overflow: hidden;
+  color: rgb(255, 212, 131);
 }
 
 div {
@@ -28,8 +29,20 @@ input {
   background-color: darkslategray;
   border: none;
   text-align: center;
+  color: rgb(255, 216, 139);
 }
 
 input:focus {
   outline: none;
+}
+
+#inp {
+  background-color: white;
+  width: 300px;
+  position: absolute;
+  top: 40px;
+  border: none;
+  box-shadow: 0 2px 8px gray;
+  color: black;
+  text-align: left;
 }
