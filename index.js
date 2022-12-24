@@ -2,7 +2,7 @@ const textEl = document.getElementById("text");
 const speedEl = document.getElementById("speed");
 const input = document.getElementById("inp");
 
-const text = "We Love Programming";
+let text = "We Love Programming";
 
 let idx = 1;
 let speed = 300 / speedEl.value;
@@ -26,6 +26,10 @@ speedEl.addEventListener("input", (e) => {
 });
 
 input.addEventListener("keydown", (e) => {
-  textEl.innerHTML = input.value;
-  writeText();
+  if (e.key == "Enter") {
+    textEl.innerHTML = "";
+    text = input.value;
+    writeText();
+    input.value = "";
+  }
 });
